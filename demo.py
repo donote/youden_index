@@ -2,6 +2,7 @@
 demo for youden index
 """
 
+import pandas as pd
 from youden import youden_index
 import numpy as np
 
@@ -14,7 +15,12 @@ def demo():
 
     df, mj_val, mf1_val, auc = youden_index(y_true, y_score, pos_label=1, step=5)
     print('-' * 100)
-    print(df)
+
+    dft = pd.DataFrame()
+    for col in df.columns:
+        dft[col] = df[col].map("{:.3f}".format)
+    print(dft)
+
     print('-' * 100)
     print('max_youden_value: {:.3f}'.format(mj_val))
     print('max_F1_value: {:.3f}'.format(mf1_val))
