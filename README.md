@@ -1,7 +1,8 @@
 # 计算NPV/PPV/敏感性/特异性
 
 ## 计算方法
-todo ...
+详见CSDN POST：
+[https://blog.csdn.net/iling5/article/details/130526176?spm=1001.2014.3001.5501](https://blog.csdn.net/iling5/article/details/130526176?spm=1001.2014.3001.5501)
 
 
 
